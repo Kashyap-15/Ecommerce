@@ -1,0 +1,71 @@
+.heroSection{
+    background-image: url('assets/leftHero.png'),url('assets/rightHero.png');
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: left bottom,right bottom;
+    height: calc(100vh - 50px);
+    width: 100%;
+    background-color: #f6f9fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heroContentContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heroContent{
+    width: 70%;
+    height: 200px;
+    font-size: 42px;
+    text-align: center;
+    line-height: 1.3;
+}
+.heroInput{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+.heroparent{
+    width: 70%;
+    position: relative;
+}
+.heroInput::placeholder{
+    padding-left: 5px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.heroBtn{
+    position: absolute;
+    height: 45px;
+    width: 100px;
+    top: 0;
+    right: 0;
+    background-color: #e94560;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.block{
+    padding: 50px 150px;
+    background-color: #f6f9fc;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.blockContainer{
+    padding: 20px;
+    background-color: white;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.11);
+}
+.blockContent h4{
+    font-size: 16px;
+    font-weight: 400;
+}

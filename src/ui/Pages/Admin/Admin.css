@@ -1,0 +1,35 @@
+.admin{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 90px 170px;
+    height: fit-content;
+}
+.lists{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.41);
+}
+.list{
+    text-decoration: none;
+    padding: 0px;
+    margin: 10px;
+    color: black;
+}
+.dashBoardTitle{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 10px 20px;
+}
+.adminLeftSide{
+    width: 30%;
+    flex: 1;
+    background-color: white;
+}
+.adminRightSide{
+    width: 70%;
+    flex: 4;
+}

@@ -1,0 +1,54 @@
+  :root{
+    --first-color: #ff005a;
+    --second-color: #8400ff;
+    --third-color:#000; 
+    --body-font: 'Montserrat', sans-serif;
+  }
+  #notfound{
+    position:relative;
+    height:100vh;
+  }
+  #notfound .notfound{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    max-width:767px;
+    width:100%;
+    line-height: 1.4;
+    text-align: center;
+  }
+  .notfound .notfound-404{
+    position:relative;
+    height:180px;
+    margin-bottom:20px;
+    z-index: -1;
+  } 
+  .notfound .notfound-404 h1{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    font-size:224px;
+    font-weight: 900;
+    margin:0 0 0 -12px;
+    color:var(--third-color);
+    text-transform: uppercase;
+    text-shadow: -1px -1px 0px var(--second-color), 1px 1px 0px var(--first-color);
+    letter-spacing:-20px;
+  }
+  .notfound .notfound-404 h2{
+    position:absolute;
+    left:0;
+    top:110px;
+    right:0;
+    font-size:42px;
+    font-weight: 700;
+    color:#ff005a;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 0px var(--first-color);
+    letter-spacing:13px;
+    margin:0;
+  }
+  
+  

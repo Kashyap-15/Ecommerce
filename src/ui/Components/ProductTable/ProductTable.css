@@ -1,0 +1,6 @@
+.productTable{
+    padding: 80px 170px;
+}
+.eye,.del{
+    cursor: pointer;
+}

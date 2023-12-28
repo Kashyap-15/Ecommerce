@@ -1,0 +1,80 @@
+.header{
+    background-color: white;
+    padding: 0px 170px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.headerContainer{
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.headerInputMain{
+    display: flex;
+    align-items: center;
+}
+.headerInput{
+    width: fit-content;
+    background-color: white;
+    border: 1px solid gray;
+    padding: 7px 20px;
+    border-radius: 40px;
+}
+.inputDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input{
+    padding-left: 10px;
+    width: 400px;
+    border: none;
+    height: 30px;
+}
+.input:focus{
+    outline: none;
+}
+.headerBtn{
+    width: 150px;
+    text-align: center;
+    background-color: #e94560;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.headerUserIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.userIcon,.cartIcon{
+    height: 45px;
+    width: 45px;
+    padding: 7px;
+    background-color: lightgray;
+    border-radius: 40%;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    color: black;
+}
+.cartCount{
+    position: absolute;
+    top: -5px;
+    right: -2px;
+    background-color: #e94560;
+    color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

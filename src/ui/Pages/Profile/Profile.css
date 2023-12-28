@@ -1,0 +1,10 @@
+.profile{
+    height: 100%;
+    width: 100%;
+    background-color: #dee2e7;
+    padding: 80px 170px;
+}
+.logoutBtn{
+    background-color: #e94560 !important;
+    color: white;
+}

@@ -1,0 +1,92 @@
+.login{
+    height: 100%;
+    width: 100%;
+    padding-top: 100px;
+    background-color: #dee2e7;
+}
+.loginContainer{
+    margin: 10px auto;
+    padding: 30px;
+    height: fit-content;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+.loginHeader{
+    font-size: 20px;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+}
+.loginSubTitle{
+    font-size: 15px;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+}
+.loginForm{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.logInBtn{
+    background-color: #e94560 !important;
+    color: white;
+}
+.divider{
+    text-align: center;
+    margin: 10px 0px;
+}
+.divider h6{
+    position: relative;
+}
+.loginWithOther{
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.facebook{
+    width: 50%;
+    background-color: #3b5998;
+    color: white;
+    border: none;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.google{
+    background-color: #4285f4;
+    width: 50%;
+    color: white;
+    border: none;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.account, .forgotpassword{
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    gap: 5px;
+}
+.signup, .reset{
+    text-decoration: underline;
+    color: black;
+}
+.loginFooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

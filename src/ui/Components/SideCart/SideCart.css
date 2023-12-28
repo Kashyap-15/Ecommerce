@@ -1,0 +1,79 @@
+.cart{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    z-index: 9999;
+}
+.cartContainer{
+    width: 30%;
+    background-color: aliceblue;
+}
+.cartBlack{ 
+    background-color: black;
+    filter:opacity(0.5);
+    width: 100%;
+}
+.cartCloseBtn{
+    height: 5%;
+    width: 10%;
+    background-color: #e94560;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+.cartCountBar{
+    padding: 10px 5px;
+    font-size: 20x;
+}
+.emptyCart{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.emptyCart h4{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+.sideCartBar{
+    height: 70%;
+    overflow-y: scroll;
+}
+.sideCartBarBtns{
+    padding: 20px 10px;
+    border-top: 1px solid lightgray;
+}
+.cartCheckOutDiv{
+    padding: 5px;
+    width: fit-content;
+    height: 10%;
+    background-color: #e94560;
+    color: white;
+    border: 1px solid #e94560;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cartDivNav{
+    margin: 10px 0px;
+    padding: 5px;
+    width: 28%;
+    height: 10%;
+    background-color: white;
+    color: #e94560;
+    border: 1px solid #e94560;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s all ease;
+}
+.cartDivNav:hover{
+    background-color: #e94560;
+    color: white;
+}
