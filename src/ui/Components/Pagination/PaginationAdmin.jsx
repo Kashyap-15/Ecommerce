@@ -3,29 +3,25 @@ import "./Pagination.css"
 import { Pagination, PaginationItem, PaginationLink } from 'reactstrap';
 
 
-export default function PaginationAdmin({
-    setPagination,
-    page,
-    limit,
-    pageLimit,
-}) {
-    let [pageArr, setPageArr] = useState([1, 2, 3, 4, 5])
+export default function PaginationAdmin({setPagination,page,limit,pageLimit}){
 
-    useEffect(() => {
-        if ([pageLimit - 2, pageLimit - 1, pageLimit].includes(page)) {
-            let arr = [
-                pageLimit - 4,
-                pageLimit - 3,
-                pageLimit - 2,
-                pageLimit - 1,
-                pageLimit,
+    let [pageArr,setPageArr] = useState([1,2,3,4,5])
+
+    useEffect(()=>{
+        if([pageLimit-2,pageLimit-1,pageLimit].includes(page)){
+            let arr=[
+                pageLimit-4,
+                pageLimit-3,
+                pageLimit-2,
+                pageLimit-1,
+                pageLimit
             ];
-            setPageArr(arr);
-        } else if (page > 3) {
-            let arr = [page - 2, page - 1, page, page + 1, page + 2];
-            setPageArr(arr);
+            setPageArr(arr)
+        }else if(page>3){
+            let arr = [page-2,page-1,page,page+1,page+2];
+            setPageArr(arr)
         }
-    }, [page]);
+    },[page])
 
 
     return (
@@ -38,7 +34,7 @@ export default function PaginationAdmin({
                     {pageArr?.map?.((e, i) => {
                         return (
                             <PaginationItem key={i}>
-                                <PaginationLink onClick={() => setPagination({ limit, page: e })}>
+                                <PaginationLink onClick={()=>setPagination({limit,page:e})} >
                                     {e}
                                 </PaginationLink>
                             </PaginationItem>
@@ -47,7 +43,7 @@ export default function PaginationAdmin({
                     <PaginationItem>
                         <PaginationLink
                             last
-                            onClick={() => setPagination({ limit, page: pageLimit })}
+                            onClick={()=>setPagination({limit,page:pageLimit})}
                         />
                     </PaginationItem>
                 </Pagination>

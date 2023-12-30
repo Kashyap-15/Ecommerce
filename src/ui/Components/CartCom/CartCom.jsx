@@ -15,10 +15,6 @@ export default function CartCom({Pname,Pprice,Pimg,cartCount,setTotalCount}) {
     setTotalCount(cartNum*Pprice)
   },[cartNum*Pprice])
 
-  // useEffect(()=>{
-  //   let totalcount=
-  // },[])
-
   const increment=()=>{
     setCartNum(cartNum+1)
   }

@@ -11,26 +11,25 @@ import axios from 'axios'
 import AdminModal from '../AdminModal/AdminModal'
 import PaginationAdmin from '../Pagination/PaginationAdmin'
 
+
 export default function ProductTable() {
   let [allproduct, setAllproduct] = useState([])
-  let [modal, setModal] = useState(false);
+  let [modal, setModal] = useState(false)
   let [searchParam,setSearchParam]=useSearchParams()
-  let [totalCount, setTotalCount] = useState(0);
-  let [pagination, setPagination] = useState({
-    limit:10,
-    page:1
-  });
-  
-  useEffect(()=>{
-    dispatch(fetchproduct({page:pagination?.page,limit:10}))
-  },[pagination])
-  
+  let [totalCount,setTotalCount]=useState(0)
+  console.log("🚀 ~ file: ProductTable.jsx:20 ~ ProductTable ~ totalCount:", totalCount)
+  let [pagination,setPagination]=useState({
+    limit:10, 
+    page:1,
+  })
+
+
   let dispatch = useDispatch()
 
   
   useEffect(() => {
-    dispatch(fetchproduct())
-  }, [])
+    dispatch(fetchproduct({page:pagination?.page, limit:10}))
+  }, [pagination])
   
   let data = useSelector((state) => state.productReducer)
   
@@ -38,7 +37,7 @@ export default function ProductTable() {
     if (data?.error?.length > 0) {
       toast.error(data.error)
     }
-    setAllproduct(data.products)
+    setAllproduct(data?.products)
     setTotalCount(data?.count)
   }, [data])
 
@@ -50,7 +49,6 @@ export default function ProductTable() {
         authorization:`bearer ${JSON.parse(localStorage.getItem("token"))}`
       }
     }).then((res) => {
-      console.log("🚀 ~ file: ProductTable.jsx:38 ~ delHandler ~ res:", res.data)
       toast.success("Product Deleted")
       dispatch(fetchproduct())
     }).catch((err)=>{
@@ -73,13 +71,13 @@ export default function ProductTable() {
             <Button color='error' variant='outlined'><span><ArrowBack /></span> Back to Dashboard</Button>
           </NavLink>
         </div>
-
-        <PaginationAdmin 
-            setPagination={setPagination}
-            page={pagination?.page}
-            limit={pagination?.limit}
-            pageLimit={Math.ceil(totalCount / 10)}/>
         <div>
+          <PaginationAdmin 
+            setPagination={setPagination}
+            page={pagination.page}
+            limit={pagination.limit}
+            pageLimit={Math.ceil(totalCount/10)}
+          />
           {
             data.pending ? <h1>Fetching Data......</h1> :
               <Table striped>
@@ -102,7 +100,7 @@ export default function ProductTable() {
                       return(
 
                         <tr key={i}>
-                        <td>{i}</td>
+                        <td>{(pagination?.page - 1) * 10 + i + 1}</td>
                         <td>{e._id}</td>
                         <td>
                           <img
@@ -121,8 +119,8 @@ export default function ProductTable() {
                         </td>
                         <td>
                            {e.color.map?.((ele, i) => {
-                            return (<div className='d-flex mt-1' >
-                              <div key={i} style={{backgroundColor:`${ele}`,width:"100%",height:"10px"}}></div>
+                            return (<div key={i} className='d-flex mt-1' >
+                              <div style={{backgroundColor:`${ele}`,width:"100%",height:"10px"}}></div>
                             </div>)
                           })}
                         </td>

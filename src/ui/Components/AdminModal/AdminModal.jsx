@@ -12,7 +12,6 @@ export default function AdminModal({ modal, setModal }) {
             method: "get",
             url: `http://localhost:9999/product/getProductById/${id}`,
         }).then((res) => {
-            console.log("🚀 ~ file: AdminModal.jsx:15 ~ useEffect ~ res:", res.data.data)
             setProduct(res?.data?.data)
         }).catch((err) => {
             console.log(err);
@@ -36,6 +35,12 @@ export default function AdminModal({ modal, setModal }) {
                             </h6>
                             <p>
                                 Description : {product?.description}
+                            </p>
+                            <p>
+                                Box Size :
+                                {[41, 42, 43, 44, 45].map?.((ele, i) => {
+                                    return <span key={i}>{ele}-</span>;
+                                })}
                             </p>
                         </div>
                     </ModalBody>
