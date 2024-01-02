@@ -16,9 +16,6 @@ export default function Admin() {
             <NavLink className='list' to={"/"}>
             <div><span><Dashboard/></span> Dashboard</div>
             </NavLink >
-            <NavLink className='list' to={"/addproducts"}>
-            <div><span><Add/></span> Add Products</div>
-            </NavLink>
             <NavLink className='list' to={"/products"}>
             <div><span><Storage/></span> Products</div>
             </NavLink>

@@ -20,6 +20,9 @@ export default function PaginationAdmin({setPagination,page,limit,pageLimit}){
         }else if(page>3){
             let arr = [page-2,page-1,page,page+1,page+2];
             setPageArr(arr)
+        }else if(page<3){
+            let arr = [1,2,3,4,5];
+            setPageArr(arr)
         }
     },[page])
 
@@ -28,8 +31,8 @@ export default function PaginationAdmin({setPagination,page,limit,pageLimit}){
         <>
             <div>
                 <Pagination aria-label="Page navigation example">
-                    <PaginationItem disabled>
-                        <PaginationLink first />
+                    <PaginationItem  >
+                        <PaginationLink  first  onClick={()=>setPagination({limit,page:1})} />
                     </PaginationItem>
                     {pageArr?.map?.((e, i) => {
                         return (

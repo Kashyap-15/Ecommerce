@@ -1,13 +1,12 @@
 import React, { useState } from 'react'
 import "./AddProduct.css"
-import { ArrowBack, ArrowForwardRounded, Widgets } from '@mui/icons-material'
+import { ArrowBack, ArrowForwardRounded } from '@mui/icons-material'
 import { Box, Button, MenuItem, TextField } from '@mui/material'
-import { NavLink } from 'react-router-dom'
 import axios from 'axios'
 import { useSelector } from 'react-redux'
 import { toast } from 'react-toastify'
 
-export default function AddProduct() {
+export default function AddProduct({setModal,modal}) {
   const [productData, setProductData] = useState({
     title: "",
     qty: "",
@@ -19,7 +18,7 @@ export default function AddProduct() {
   })
   let token = useSelector((state) => state.authReducer.token)
 
-  const currencies = [
+  const cetagories = [
     {
       value: 'Vegetable',
       label: 'Vegetable',
@@ -63,16 +62,11 @@ export default function AddProduct() {
       description: "",
       discountPrice: "",
     })
+    setModal(!modal)
   }
   return (
     <>
       <div className='addProduct'>
-        <div className='d-flex align-items-center justify-content-between m-3'>
-          <h4><span><Widgets /></span> Add Products</h4>
-          <NavLink to={"/"}>
-            <Button color='error' variant='outlined'><span><ArrowBack /></span> Back to Dashboard</Button>
-          </NavLink>
-        </div>
         <div className="productForm">
           <Box
             className='box'
@@ -101,11 +95,10 @@ export default function AddProduct() {
               select
               label="Select"
               defaultValue="Vegetable"
-              // helperText=""
               value={productData.category}
               onChange={(e) => setProductData({ ...productData, category: e?.target?.value })}
             >
-              {currencies.map((option) => (
+              {cetagories.map((option) => (
                 <MenuItem key={option.value} value={option.value}>
                   {option.label}
                 </MenuItem>

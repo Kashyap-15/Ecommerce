@@ -10,6 +10,7 @@ import { Table } from 'react-bootstrap'
 import axios from 'axios'
 import AdminModal from '../AdminModal/AdminModal'
 import PaginationAdmin from '../Pagination/PaginationAdmin'
+import AddModal from '../AddModal/AddModal'
 
 
 export default function ProductTable() {
@@ -71,13 +72,9 @@ export default function ProductTable() {
             <Button color='error' variant='outlined'><span><ArrowBack /></span> Back to Dashboard</Button>
           </NavLink>
         </div>
+        <div className='d-flex align-items-center justify-content-end p-3'> <AddModal/> </div>
         <div>
-          <PaginationAdmin 
-            setPagination={setPagination}
-            page={pagination.page}
-            limit={pagination.limit}
-            pageLimit={Math.ceil(totalCount/10)}
-          />
+         
           {
             data.pending ? <h1>Fetching Data......</h1> :
               <Table striped>
@@ -89,7 +86,6 @@ export default function ProductTable() {
                     <th>Title</th>
                     <th>Price</th>
                     <th>Description</th>
-                    <th>Box Size</th>
                     <th>Box Color</th>
                     <th>Actions</th>
                   </tr>
@@ -113,11 +109,6 @@ export default function ProductTable() {
                         <td>{e.price}</td>
                         <td>{e.description}</td>
                         <td>
-                           {[41, 42, 43, 44, 45].map?.((ele, i) => {
-                            return <span key={i}>-{ele}-</span>;
-                          })}
-                        </td>
-                        <td>
                            {e.color.map?.((ele, i) => {
                             return (<div key={i} className='d-flex mt-1' >
                               <div style={{backgroundColor:`${ele}`,width:"100%",height:"10px"}}></div>
@@ -140,6 +131,12 @@ export default function ProductTable() {
                   </Table>
                 }
         </div>
+        <PaginationAdmin 
+            setPagination={setPagination}
+            page={pagination.page}
+            limit={pagination.limit}
+            pageLimit={Math.ceil(totalCount/10)}
+          />
         </div>
     </>
   )

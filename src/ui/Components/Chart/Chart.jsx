@@ -9,7 +9,6 @@ export default function Chart({title,datas,datakey,grid}) {
             <h3 className="chartTitle">{title}</h3>
             <ResponsiveContainer width="100%" aspect={4/1}>
                 <LineChart
-                    
                     data={datas}
                     margin={{
                         top: 5,
