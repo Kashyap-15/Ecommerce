@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { logout } from '../../../redux/Feature/Auth/Auth'
 import { useNavigate } from 'react-router-dom'
 import { Person2 } from '@mui/icons-material'
+import { toast } from 'react-toastify'
 
 export default function Profile() {
   const dispatch = useDispatch()
@@ -12,8 +13,11 @@ export default function Profile() {
   const userData = useSelector((state) => state.authReducer.user)
 
   const logOutHandler = () => {
-    dispatch(logout())
-    navigate("/login")
+    if(confirm("Are you sure?")){
+      dispatch(logout())
+      navigate("/login")
+      toast.success("LogOut Successful")
+    }
   }
   return (
     <>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import "./ProductTable.css"
-import { ArrowBack, Delete, Garage, Inventory2, RemoveRedEye, RemoveRedEyeOutlined, TramSharp, WatchLater } from '@mui/icons-material'
+import { ArrowBack, Delete, Inventory2, RemoveRedEyeOutlined } from '@mui/icons-material'
 import { NavLink, useSearchParams } from 'react-router-dom'
 import { Button } from '@mui/material'
 import { useDispatch, useSelector } from 'react-redux'
@@ -43,18 +43,20 @@ export default function ProductTable() {
   }, [data])
 
   const delHandler =(id)=>{
-    axios({
-      method:"delete",
-      url:`http://localhost:9999/product/delete/${id}`,
-      headers:{
-        authorization:`bearer ${JSON.parse(localStorage.getItem("token"))}`
-      }
-    }).then((res) => {
-      toast.success("Product Deleted")
-      dispatch(fetchproduct())
-    }).catch((err)=>{
-      toast.error(err.message)
-    })
+    if(confirm("Are you sure?")){
+      axios({
+        method:"delete",
+        url:`http://localhost:9999/product/delete/${id}`,
+        headers:{
+          authorization:`bearer ${JSON.parse(localStorage.getItem("token"))}`
+        }
+      }).then((res) => {
+        toast.success("Product Deleted")
+        dispatch(fetchproduct())
+      }).catch((err)=>{
+        toast.error(err.message)
+      })
+    }
   }
   
   const updatehandler=(e) => {

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import "./Pagination.css"
 import { Pagination, PaginationItem, PaginationLink } from 'reactstrap';
+import { KeyboardArrowLeft, KeyboardDoubleArrowLeft, KeyboardDoubleArrowRight } from '@mui/icons-material';
 
 
 export default function PaginationAdmin({setPagination,page,limit,pageLimit}){
@@ -31,24 +32,21 @@ export default function PaginationAdmin({setPagination,page,limit,pageLimit}){
         <>
             <div>
                 <Pagination aria-label="Page navigation example">
-                    <PaginationItem  >
-                        <PaginationLink  first  onClick={()=>setPagination({limit,page:1})} />
-                    </PaginationItem>
+                    <div className='PageArrow'  >
+                        <div className='FirstPage' onClick={()=>setPagination({limit,page:1})} > <KeyboardDoubleArrowLeft/> </div>
+                    </div>
                     {pageArr?.map?.((e, i) => {
                         return (
-                            <PaginationItem key={i}>
-                                <PaginationLink onClick={()=>setPagination({limit,page:e})} >
+                            <div className='pagesDiv' key={i}>
+                                <div className='page' onClick={()=>setPagination({limit,page:e})} >
                                     {e}
-                                </PaginationLink>
-                            </PaginationItem>
+                                </div>
+                            </div>
                         );
                     })}
-                    <PaginationItem>
-                        <PaginationLink
-                            last
-                            onClick={()=>setPagination({limit,page:pageLimit})}
-                        />
-                    </PaginationItem>
+                    <div className='PageArrow'  >
+                        <div className='FirstPage'  onClick={()=>setPagination({limit,page:pageLimit})} > <KeyboardDoubleArrowRight/> </div>
+                    </div>
                 </Pagination>
             </div>
         </>

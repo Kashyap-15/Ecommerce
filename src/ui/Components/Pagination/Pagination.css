@@ -1,3 +1,27 @@
 .activeclass:focus{
     outline: none;
 }
+.PageArrow{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.page{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0px 5px;
+    cursor: pointer;
+    background-color: aliceblue;
+}
+.page:active
+{
+    background-color: black;
+    color: white;
+}
