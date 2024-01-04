@@ -7,8 +7,7 @@ import { useDispatch, useSelector } from 'react-redux'
 
 export default function CartCom({Pname,Pprice,Pimg,cartCount,setTotalCount}) {
   let Count = useSelector((state)=>state.cartReducer.cartFullDetails)
-  console.log("🚀 ~ file: CartCom.jsx:10 ~ CartCom ~ Count:", Count)
-
+  
   const [cartNum, setCartNum] = useState(cartCount)
   
   useEffect(()=>{
@@ -36,7 +35,7 @@ export default function CartCom({Pname,Pprice,Pimg,cartCount,setTotalCount}) {
             <div className="priceCalDiv">
                 <h6>{Pname}</h6>
                 <p>{Pprice} x {cartNum}</p>
-                <h5>{Pprice*cartNum} $</h5>
+                <h5>{Pprice*cartNum} ₹</h5>
             </div>
             <div className="removeDiv">
                 <Close fontSize='small' />

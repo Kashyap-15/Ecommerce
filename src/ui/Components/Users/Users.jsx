@@ -19,7 +19,6 @@ export default function Users() {
                 authorization:`bearer ${token}`
             },
         }).then((res) => {
-            console.log("🚀 ~ file: Users.jsx:22 ~ useEffect ~ res:", res.data)
             setUsers(res?.data?.data)
         }).catch((err)=>{
             toast.error(err.messsage)

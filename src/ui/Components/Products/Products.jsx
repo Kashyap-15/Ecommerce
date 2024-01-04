@@ -1,11 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { MixData } from '../../../../VegeData';
 import "./Products.css"
 import { ArrowRight } from '@mui/icons-material'
 import Cards from '../Cards/Cards';
 import LeftSideBar from '../LeftSideBar/LeftSideBar';
+import axios from 'axios';
+import { toast } from 'react-toastify';
+
 
 export default function Products() {
+  let [allData,setAllData]=useState([])
+ 
+
+  useEffect(()=>{
+    axios({
+      url:"http://localhost:9999/product/getAll",
+    }).then((res)=>{
+      setAllData(res.data.data)
+    }).catch((err)=>{
+      toast.error(err.message)
+    })
+  },[])
+
+  
  
   return (
     <div className="products">
@@ -19,8 +36,8 @@ export default function Products() {
         </div>
         <div className='cardGrid'>
           {
-            MixData.map((e,i)=>{
-              return <Cards key={i} Name={e.Name} Img={e.Img} Price={e.Price} Sprice={e.Sprice}/>
+            allData?.map((e,i)=>{
+              return <Cards key={i} Name={e.title} Img={e.images} Price={e.price} Sprice={300}/>
             })
           }
         </div>

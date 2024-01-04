@@ -43,7 +43,7 @@ export default function SideCart({action}){
                                 }
                             </div>
                             <div className="sideCartBarBtns">
-                                <div className='cartCheckOutDiv'>CheckOut Now ({totalCount}$)</div>
+                                <div className='cartCheckOutDiv'>CheckOut Now ({totalCount}₹)</div>
                                 <div className="cartDivNav">View Cart</div>
                             </div>
                         </>

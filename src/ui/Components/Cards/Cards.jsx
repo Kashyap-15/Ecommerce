@@ -41,8 +41,8 @@ export default function Cards({Name,Img,Price,Sprice}) {
           </div>
           <div className='cardPriceContainer'>
             <span>Price : </span>
-            <span className='cardPrice'>{Price}$</span>
-            <span className="cardStrike">{Sprice}$</span>
+            <span className='cardPrice'>{Price}₹</span>
+            <span className="cardStrike">{Sprice}₹</span>
           </div>
           <div className="buyIcon">
             <div className="qty">

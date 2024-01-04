@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Button, Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap'
 import AddProduct from '../AddProduct/AddProduct';
 
-export default function AddModal() {
+export default function AddModal({ pagination, setPagination }) {
     const [modal, setModal] = useState(false);
 
     const toggle = () => setModal(!modal);
@@ -12,9 +12,9 @@ export default function AddModal() {
                 Add Products
             </Button>
             <Modal fullscreen={true} isOpen={modal} toggle={toggle}>
-                <ModalHeader toggle={toggle}>Add Products</ModalHeader>
+                <ModalHeader toggle={toggle}>Add Product</ModalHeader>
                 <ModalBody>
-                   <AddProduct setModal={setModal} modal={modal}/>
+                    <AddProduct setModal={setModal} modal={modal} setPagination={setPagination} pagination={pagination} />
                 </ModalBody>
                 <ModalFooter>
                     <Button color="secondary" onClick={toggle}>

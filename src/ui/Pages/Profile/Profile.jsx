@@ -29,7 +29,7 @@ export default function Profile() {
         <div className="details d-flex align-items-center justify-content-evenly mt-4">
           <div className="imgdiv">
             <img className='img mt-3' src="https://images.unsplash.com/photo-1502323777036-f29e3972d82f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fHByb2ZpbGUlMjBwaWN8ZW58MHx8MHx8fDA%3D" alt="" />
-            <h4>Balance : 500$</h4>
+            <h4>Balance : 500₹</h4>
             <Button variant="contained" className='logoutBtn ms-5' onClick={logOutHandler} >
               LogOut
             </Button>

@@ -3,10 +3,11 @@ import "./AddProduct.css"
 import { ArrowBack, ArrowForwardRounded } from '@mui/icons-material'
 import { Box, Button, MenuItem, TextField } from '@mui/material'
 import axios from 'axios'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { toast } from 'react-toastify'
+import { fetchproduct } from '../../../redux/Feature/Product/Product'
 
-export default function AddProduct({setModal,modal}) {
+export default function AddProduct({ setModal, modal, pagination, page, setPagination }) {
   const [productData, setProductData] = useState({
     title: "",
     qty: "",
@@ -17,6 +18,10 @@ export default function AddProduct({setModal,modal}) {
     discountPrice: "",
   })
   let token = useSelector((state) => state.authReducer.token)
+  let data = useSelector((state) => state.productReducer)
+  console.log("🚀 ~ file: AddProduct.jsx:22 ~ AddProduct ~ data:", data)
+
+  let dispatch = useDispatch()
 
   const cetagories = [
     {
@@ -49,9 +54,16 @@ export default function AddProduct({setModal,modal}) {
       }
     }).then((res) => {
       toast.success("Product Added Successfully")
+      let x = pagination?.page
+      console.log("first", data.products?.length)
+      if (data.products?.length === 10) x++
+      console.log("-----x====", x)
+      setPagination({ ...pagination, page: x })
+      dispatch(fetchproduct({ page: x, limit: 10 }))
     }).catch((err) => {
       toast.error(err.message)
     })
+
 
     setProductData({
       title: "",
