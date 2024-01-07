@@ -1,0 +1,165 @@
+.headerMain {
+    position: sticky;
+    top: -1px;
+    left: 0px;
+    width: 100%;
+    z-index: 99;
+}
+
+/* ------------------> Main Header -------------------------------------------------------- */
+.header {
+    padding: 20px 50px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ------------------------------------------------> Header Logo ---------------------------*/
+.headerLogo {
+    flex: 0.5;
+}
+
+.logoImg {
+    height: 50%;
+    width: 50%;
+}
+
+/* -------------------------------------------> Header Navbar ------------------------------*/
+.headerNavbar {
+    flex: 3;
+}
+
+.headerUl {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.headerLi {
+    margin-right: 5%;
+    color: black;
+    font-weight: 200;
+    font-size: 18px;
+    transition: 0.2s all ease;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.headerLi::before {
+    content: " ";
+    position: absolute;
+    top: 110%;
+    left: 30%;
+    width: 0%;
+    height: 7%;
+    background-color: #ff0000;
+    transition: 0.7s all ease;
+}
+
+.headerLi:hover::before {
+    width: 50%;
+}
+
+.CategoriesUl {
+    width: 90vw;
+    position: absolute;
+    top: 150%;
+    left: -140%;
+    background-color: white ;
+    list-style-type: none;
+    height: fit-content;
+    display: none;
+    padding: 20px 30px;
+    border: 1px solid gray;
+}
+
+.CategoriesSquare {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-left: 1px solid gray;
+    border-top: 1px solid gray;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -10px;
+    left: 15%;
+}
+
+.headerLi:hover .CategoriesUl{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+/* -----------------------------------------> Header Inner Ul-li ------------------------------*/
+.Categoriesli{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    color: black;
+    transition: 0.3s all ease;
+}
+.Categoriesli:hover{
+    color: rgba(0, 0, 0, 0.585);
+}
+.Categoriesli:hover .CategoriesImg{
+    opacity: 0.6;
+}
+.CategoriesImg{
+    height: 18%;
+    width: 18%;
+    object-fit: contain;
+    opacity: 1;
+}
+.categoriesContent{
+    padding-left: 5px;
+}
+/* ------------------------------------------> Header Rightbar ------------------------- */
+.headerRight {
+    flex: 1;
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerSearch{
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #e1e1e1;
+    width: 70%;
+    overflow-y: hidden;
+}
+
+.headerSearch input {
+    outline: none;
+    border: none;
+    height: 100%;
+    width: 100%;
+    background-color: #e1e1e1;
+    font-weight: 500;
+    height: 20px;
+}
+
+.scrollingPlaceholder::placeholder {
+    padding-left: 7px;
+}
+
+.HeaderIcons {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    gap: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,78 @@
+.adminLeftSidebar{
+    flex: 1;
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+/* -------------- LOGO Section ------------------ */
+.leftSidebarLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+}
+.sidebarLogoImg{
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+/* ------------ Ui - Li Section --------------------- */
+.leftSidebarContent{
+    margin: 20px 10px;
+}
+.leftSidebarUl{
+    padding: 0;
+    margin: 10px 0px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.leftSidebarLi{
+    font-size: 13px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    transition: 0.6s all ease;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+.leftSidebarLi:hover{
+    background-color: black;
+    color: white;
+}
+.leftSidebarTools{
+    margin: 10px 0px;
+    font-size: 17px;
+    font-weight: 500;
+}
+/* ------------------- Logout -------------- */
+.leftSidebarFooter{
+    display: flex;
+    align-content: inherit;
+    justify-content: end;
+    margin-top: 30px;
+}
+.SidebarLogoutIcon{
+    transform: rotate(180deg);
+}
+.leftSidebarLogLi{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    transition: 0.6s all ease;
+    cursor: pointer;
+}   
+.leftSidebarLogLi:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}

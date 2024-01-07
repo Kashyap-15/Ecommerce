@@ -1,0 +1,1730 @@
+[
+  {
+    "_id": {
+      "$oid": "65827764e3dec9d2bfcdc075"
+    },
+    "title": "Blueberry",
+    "description": "BLue colored Berry Fruit is here",
+    "price": 56,
+    "images": [
+      "https://images.unsplash.com/photo-1594002348772-bc0cb57ade8b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Ymx1ZWJlcnJ5fGVufDB8fDB8fHww"
+    ],
+    "category": [
+      "Fruit"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2023-12-20T05:11:00.393Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-20T05:11:00.393Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65827c13e3dec9d2bfcdc079"
+    },
+    "title": "peas",
+    "description": "It is Frozen Product",
+    "price": 55,
+    "images": [
+      "https://images.unsplash.com/photo-1592394533824-9440e5d68530?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVhc3xlbnwwfHwwfHx8MA%3D%3D"
+    ],
+    "category": [
+      "Frozen"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2023-12-20T05:30:59.528Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-20T05:30:59.528Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65827d9fe3dec9d2bfcdc07b"
+    },
+    "title": "Cheese",
+    "description": "Fatty Cheese",
+    "price": 78,
+    "images": [
+      "https://images.unsplash.com/photo-1589881133595-a3c085cb731d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2hlZXNlfGVufDB8fDB8fHww"
+    ],
+    "category": [
+      "Dairy"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2023-12-20T05:37:35.343Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-20T05:37:35.343Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65850dda724854a7101c31c1"
+    },
+    "title": "Potato",
+    "description": "It is Pure Potato",
+    "price": 44,
+    "images": [
+      "https://images.unsplash.com/photo-1590165482129-1b8b27698780?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8UG90YXRvfGVufDB8fDB8fHww"
+    ],
+    "category": [
+      "Vegetable"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2023-12-22T04:17:30.161Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-22T04:17:30.161Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "658a603792aab54e3bdb93e4"
+    },
+    "title": "Brinjal",
+    "description": "The Vegetable\n",
+    "price": 23,
+    "images": [
+      "https://plus.unsplash.com/premium_photo-1664647841075-8d1e2e7732d8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fGJyaW5qYWx8ZW58MHx8MHx8fDA%3D"
+    ],
+    "category": [
+      "Vegetable"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2023-12-26T05:10:15.340Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-26T05:10:15.340Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "658b9afd98c15ceb562e5595"
+    },
+    "title": "Mango",
+    "description": "The King Of Fruit",
+    "price": 322,
+    "images": [
+      "https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWFuZ298ZW58MHx8MHx8fDA%3D"
+    ],
+    "category": [
+      "Fruit"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2023-12-27T03:33:17.269Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-27T03:33:17.269Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "658b9c6298c15ceb562e56a7"
+    },
+    "title": "Banana",
+    "description": "The Yellow Gem",
+    "price": 11,
+    "images": [
+      "https://images.unsplash.com/photo-1603833665858-e61d17a86224?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFuYW5hfGVufDB8fDB8fHww"
+    ],
+    "category": [
+      "Fruit"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2023-12-27T03:39:14.520Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-27T03:39:14.520Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6596371755ee7b8381ba2af4"
+    },
+    "title": "Onions",
+    "description": "The Crying Vegetable",
+    "price": 33,
+    "images": [
+      "https://images.unsplash.com/photo-1618512496248-a07fe83aa8cb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8T25pb25zfGVufDB8fDB8fHww"
+    ],
+    "category": [
+      "Vegetable"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T04:41:59.690Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T04:41:59.690Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6596374b55ee7b8381ba2afa"
+    },
+    "title": "Tomatoes",
+    "description": "The Red Ripe Queen",
+    "price": 22,
+    "images": [
+      "https://images.unsplash.com/photo-1582284540020-8acbe03f4924?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8VG9tYXRvZXN8ZW58MHx8MHx8fDA%3D"
+    ],
+    "category": [
+      "Vegetable"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T04:42:51.598Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T04:42:51.598Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6596378855ee7b8381ba2b00"
+    },
+    "title": "ButterMilk",
+    "description": "The After Meal Juice",
+    "price": 23,
+    "images": [
+      "https://images.unsplash.com/photo-1630409346699-79481a79db52?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnV0dGVyTWlsa3xlbnwwfHwwfHx8MA%3D%3D"
+    ],
+    "category": [
+      "Dairy"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T04:43:52.403Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T04:43:52.403Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "659637be55ee7b8381ba2b06"
+    },
+    "title": "Dragon Fruite",
+    "description": "The Hybrid Fruite",
+    "price": 90,
+    "images": [
+      "https://plus.unsplash.com/premium_photo-1667051230160-5906f5683a59?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8amFja2ZydWl0fGVufDB8fDB8fHww"
+    ],
+    "category": [
+      "Fruit"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T04:44:46.413Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T04:44:46.413Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6596383f55ee7b8381ba2b0c"
+    },
+    "title": "JackFruit",
+    "description": "The unique Fruite",
+    "price": 45,
+    "images": [
+      "https://images.unsplash.com/photo-1569294860071-b2ac12ee73b7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8amFja2ZydWl0fGVufDB8fDB8fHww"
+    ],
+    "category": [
+      "Fruit"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T04:46:55.496Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T04:46:55.496Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6596389155ee7b8381ba2b14"
+    },
+    "title": "Lemons",
+    "description": "The vitamin C King",
+    "price": 56,
+    "images": [
+      "https://images.unsplash.com/photo-1590502593747-42a996133562?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bGVtb258ZW58MHx8MHx8fDA%3D"
+    ],
+    "category": [
+      "Vegetable"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T04:48:17.868Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T04:48:17.868Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "659638dd55ee7b8381ba2b1c"
+    },
+    "title": "Black Grapes",
+    "description": "The Black King Of Grapes",
+    "price": 342,
+    "images": [
+      "https://images.unsplash.com/photo-1508162172419-c47fcdf7d2ca?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGdyYXBlfGVufDB8fDB8fHww"
+    ],
+    "category": [
+      "Fruit"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T04:49:33.319Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T04:49:33.319Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "659639a755ee7b8381ba2b25"
+    },
+    "title": "Green Grapes",
+    "description": "The Great Grapes",
+    "price": 45,
+    "images": [
+      "https://images.unsplash.com/photo-1600766694283-1342b147738d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fEdyZWVuJTIwR3JhcGVzfGVufDB8fDB8fHww"
+    ],
+    "category": [
+      "Fruit"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T04:52:55.904Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T04:52:55.904Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65963a3d55ee7b8381ba2b2b"
+    },
+    "title": "Watermelon",
+    "description": "The Inside Red",
+    "price": 45,
+    "images": [
+      "https://images.unsplash.com/photo-1621961048737-a9993789e1ad?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdhdGVybWVsb258ZW58MHx8MHx8fDA%3D"
+    ],
+    "category": [
+      "Fruit"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T04:55:25.480Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T04:55:25.480Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65963a8d55ee7b8381ba2b31"
+    },
+    "title": "Oranges",
+    "description": "The Orange Orange",
+    "price": 233,
+    "images": [
+      "https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b3Jhbmdlc3xlbnwwfHwwfHx8MA%3D%3D"
+    ],
+    "category": [
+      "Fruit"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T04:56:45.378Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T04:56:45.378Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65963adc55ee7b8381ba2b37"
+    },
+    "title": "Red Chilly",
+    "description": "The Hot Chilly",
+    "price": 213,
+    "images": [
+      "https://images.unsplash.com/photo-1602237514002-c2d8ae2da393?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hpbGx5fGVufDB8fDB8fHww"
+    ],
+    "category": [
+      "Vegetable"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T04:58:04.488Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T04:58:04.488Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65963b2155ee7b8381ba2b3d"
+    },
+    "title": "Grren Chilly",
+    "description": "The Green Hot",
+    "price": 34,
+    "images": [
+      "https://images.unsplash.com/photo-1667885098591-8fec06ead8d8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Z3JlZW4lMjBjaGlsbHl8ZW58MHx8MHx8fDA%3D"
+    ],
+    "category": [
+      "Vegetable"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T04:59:13.212Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T04:59:13.212Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65963b5a55ee7b8381ba2b43"
+    },
+    "title": "Kiwi",
+    "description": "The New One",
+    "price": 232,
+    "images": [
+      "https://plus.unsplash.com/premium_photo-1674382739482-5d36b98d653a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8a2l3aXxlbnwwfHwwfHx8MA%3D%3D"
+    ],
+    "category": [
+      "Fruit"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T05:00:10.379Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T05:00:10.379Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65963bac55ee7b8381ba2b49"
+    },
+    "title": "Brocoli",
+    "description": "The MultiVitamin",
+    "price": 234,
+    "images": [
+      "https://images.unsplash.com/photo-1583663848850-46af132dc08e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YnJvY29saXxlbnwwfHwwfHx8MA%3D%3D"
+    ],
+    "category": [
+      "Vegetable"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T05:01:32.016Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T05:01:32.016Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65963bdd55ee7b8381ba2b4f"
+    },
+    "title": "Corn",
+    "description": "The Yellow Beans",
+    "price": 43,
+    "images": [
+      "https://plus.unsplash.com/premium_photo-1667047165840-803e47970128?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29ybnxlbnwwfHwwfHx8MA%3D%3D"
+    ],
+    "category": [
+      "Vegetable"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T05:02:21.978Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T05:02:21.978Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65963c1355ee7b8381ba2b55"
+    },
+    "title": "Cucumber",
+    "description": "The Best Salad",
+    "price": 23,
+    "images": [
+      "https://images.unsplash.com/photo-1449300079323-02e209d9d3a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y3VjdW1iZXJ8ZW58MHx8MHx8fDA%3D"
+    ],
+    "category": [
+      "Vegetable"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T05:03:15.248Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T05:03:15.248Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65963c5f55ee7b8381ba2b5b"
+    },
+    "title": "LadyFinger",
+    "description": "What a Veg",
+    "price": 56,
+    "images": [
+      "https://images.unsplash.com/photo-1664289242854-e99d345cfa92?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFkeWZpbmdlcnxlbnwwfHwwfHx8MA%3D%3D"
+    ],
+    "category": [
+      "Vegetable"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T05:04:31.993Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T05:04:31.993Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65963ce755ee7b8381ba2b62"
+    },
+    "title": "StrawBerry",
+    "description": "The Red King Fruit",
+    "price": 234,
+    "images": [
+      "https://images.unsplash.com/photo-1574856344991-aaa31b6f4ce3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZnJ1aXR8ZW58MHx8MHx8fDA%3D"
+    ],
+    "category": [
+      "Fruit"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T05:06:47.383Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T05:06:47.383Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65963d1a55ee7b8381ba2b68"
+    },
+    "title": "Red Berry",
+    "description": "The Red One",
+    "price": 45,
+    "images": [
+      "https://images.unsplash.com/photo-1596016083775-71de95c542c8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVkJTIwYmVycnl8ZW58MHx8MHx8fDA%3D"
+    ],
+    "category": [
+      "Fruit"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T05:07:38.975Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T05:07:38.975Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65963d5c55ee7b8381ba2b6e"
+    },
+    "title": "Avocado",
+    "description": "The Costly one",
+    "price": 234,
+    "images": [
+      "https://images.unsplash.com/photo-1590005024862-6b67679a29fb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXZvY2Fkb3xlbnwwfHwwfHx8MA%3D%3D"
+    ],
+    "category": [
+      "Fruit"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T05:08:44.723Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T05:08:44.723Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65963d9355ee7b8381ba2b74"
+    },
+    "title": "Papaya",
+    "description": "The occur Yellow King\n",
+    "price": 57,
+    "images": [
+      "https://plus.unsplash.com/premium_photo-1675639895212-696149c275f9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGFweWF8ZW58MHx8MHx8fDA%3D"
+    ],
+    "category": [
+      "Fruit"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T05:09:39.768Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T05:09:39.768Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65963e1d55ee7b8381ba2b7a"
+    },
+    "title": "Cabbage",
+    "description": "The Grower",
+    "price": 23,
+    "images": [
+      "https://images.unsplash.com/photo-1594282486552-05b4d80fbb9f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FiYmFnZXxlbnwwfHwwfHx8MA%3D%3D"
+    ],
+    "category": [
+      "Vegetable"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T05:11:57.233Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T05:11:57.233Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65963e4855ee7b8381ba2b80"
+    },
+    "title": "Cauliflower",
+    "description": "The Flower Vegetable",
+    "price": 67,
+    "images": [
+      "https://images.unsplash.com/photo-1566842600175-97dca489844f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2F1bGlmbG93ZXJ8ZW58MHx8MHx8fDA%3D"
+    ],
+    "category": [
+      "Vegetable"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T05:12:40.833Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T05:12:40.833Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65963e7555ee7b8381ba2b86"
+    },
+    "title": "Spinach",
+    "description": "The Power Booster",
+    "price": 34,
+    "images": [
+      "https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3BpbmFjaHxlbnwwfHwwfHx8MA%3D%3D"
+    ],
+    "category": [
+      "Vegetable"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T05:13:25.009Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T05:13:25.009Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65963ebc55ee7b8381ba2bac"
+    },
+    "title": "Carrot",
+    "description": "The Halwa Vegetable",
+    "price": 32,
+    "images": [
+      "https://images.unsplash.com/photo-1590868309235-ea34bed7bd7f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2Fycm90fGVufDB8fDB8fHww"
+    ],
+    "category": [
+      "Vegetable"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T05:14:36.240Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T05:14:36.240Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65963ee355ee7b8381ba2bb2"
+    },
+    "title": "Asparagus",
+    "description": "The Unknown",
+    "price": 34,
+    "images": [
+      "https://images.unsplash.com/photo-1629875235163-2e52306e4018?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXNwYXJhZ3VzfGVufDB8fDB8fHww"
+    ],
+    "category": [
+      "Vegetable"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T05:15:15.362Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T05:15:15.362Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65963fae55ee7b8381ba2bb8"
+    },
+    "title": "Bitter gourd",
+    "description": "The Bitter King",
+    "price": 34,
+    "images": [
+      "https://images.unsplash.com/photo-1512848828020-55b83a5fe528?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Qml0dGVyJTIwZ291cmR8ZW58MHx8MHx8fDA%3D"
+    ],
+    "category": [
+      "Vegetable"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T05:18:38.858Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T05:18:38.858Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65963ff955ee7b8381ba2bbe"
+    },
+    "title": "Garlic",
+    "description": "The Spice King",
+    "price": 45,
+    "images": [
+      "https://images.unsplash.com/photo-1579705744772-f26014b5e084?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Z2FybGljfGVufDB8fDB8fHww"
+    ],
+    "category": [
+      "Vegetable"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T05:19:53.344Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T05:19:53.344Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6596403955ee7b8381ba2bc4"
+    },
+    "title": "Beans",
+    "description": "The unknown",
+    "price": 34,
+    "images": [
+      "https://images.unsplash.com/photo-1613758235402-745466bb7efe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YmVhbnN8ZW58MHx8MHx8fDA%3D"
+    ],
+    "category": [
+      "Vegetable"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T05:20:57.804Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T05:20:57.804Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6596406a55ee7b8381ba2bca"
+    },
+    "title": "Ginger",
+    "description": "The Tea Partner",
+    "price": 34,
+    "images": [
+      "https://images.unsplash.com/photo-1603431777782-912e3b76f60d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z2luZ2VyfGVufDB8fDB8fHww"
+    ],
+    "category": [
+      "Vegetable"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T05:21:46.030Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T05:21:46.030Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6596409655ee7b8381ba2bd0"
+    },
+    "title": "Beet Root",
+    "description": "The Blood King",
+    "price": 45,
+    "images": [
+      "https://images.unsplash.com/photo-1594400316020-f357da8a2848?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmVldCUyMHJvb3R8ZW58MHx8MHx8fDA%3D"
+    ],
+    "category": [
+      "Vegetable"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T05:22:30.041Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T05:22:30.041Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "659640bc55ee7b8381ba2bd6"
+    },
+    "title": "Spring onion",
+    "description": "The Chinese King",
+    "price": 45,
+    "images": [
+      "https://images.unsplash.com/photo-1624505744594-4c710cd1a601?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3ByaW5nJTIwb25pb258ZW58MHx8MHx8fDA%3D"
+    ],
+    "category": [
+      "Vegetable"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T05:23:08.167Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T05:23:08.167Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6596410055ee7b8381ba2bdc"
+    },
+    "title": "Mushroom",
+    "description": "The Outer Vege",
+    "price": 89,
+    "images": [
+      "https://images.unsplash.com/photo-1571074635691-b910c7a5cdbb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TXVzaHJvb218ZW58MHx8MHx8fDA%3D"
+    ],
+    "category": [
+      "Vegetable"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T05:24:16.715Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T05:24:16.715Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6596416155ee7b8381ba2be2"
+    },
+    "title": "Mint",
+    "description": "The Cool Vege",
+    "price": 34,
+    "images": [
+      "https://images.unsplash.com/photo-1603653856395-084002e5d39d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWludHxlbnwwfHwwfHx8MA%3D%3D"
+    ],
+    "category": [
+      "Vegetable"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T05:25:53.180Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T05:25:53.180Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "659641a255ee7b8381ba2bee"
+    },
+    "title": "Pumpkin",
+    "description": "The Hellowine one",
+    "price": 78,
+    "images": [
+      "https://images.unsplash.com/photo-1570586437263-ab629fccc818?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHVtcGtpbnxlbnwwfHwwfHx8MA%3D%3D"
+    ],
+    "category": [
+      "Vegetable"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T05:26:58.978Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T05:26:58.978Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "659641f955ee7b8381ba2bf4"
+    },
+    "title": "Eggplant",
+    "description": "The Similar one",
+    "price": 56,
+    "images": [
+      "https://images.unsplash.com/photo-1605197378540-10ebaf6999e5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8RWdncGxhbnR8ZW58MHx8MHx8fDA%3D"
+    ],
+    "category": [
+      "Vegetable"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T05:28:25.358Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T05:28:25.358Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6596423c55ee7b8381ba2bfa"
+    },
+    "title": "pomogranate",
+    "description": "The Multi VItamin Fruite",
+    "price": 123,
+    "images": [
+      "https://images.unsplash.com/photo-1667885098658-7e34d751fded?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cG9tb2dyYW5hdGV8ZW58MHx8MHx8fDA%3D"
+    ],
+    "category": [
+      "Fruit"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T05:29:32.281Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T05:29:32.281Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "659642c855ee7b8381ba2c00"
+    },
+    "title": "Guava",
+    "description": "The Hypocrite one",
+    "price": 45,
+    "images": [
+      "https://images.unsplash.com/photo-1600659090872-74ca5ca1023a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8R3VhdmF8ZW58MHx8MHx8fDA%3D"
+    ],
+    "category": [
+      "Vegetable"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T05:31:52.904Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T05:31:52.904Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6596430c55ee7b8381ba2c06"
+    },
+    "title": "Milk Cream",
+    "description": "The Milk Cream",
+    "price": 234,
+    "images": [
+      "https://images.unsplash.com/photo-1622737338437-39a24c37f0de?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y3JlYW18ZW58MHx8MHx8fDA%3D"
+    ],
+    "category": [
+      "Dairy"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T05:33:00.563Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T05:33:00.563Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6596434555ee7b8381ba2c10"
+    },
+    "title": "Butter",
+    "description": "The Great One",
+    "price": 334,
+    "images": [
+      "https://plus.unsplash.com/premium_photo-1673965777407-9ae155fde644?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnV0dGVyfGVufDB8fDB8fHww"
+    ],
+    "category": [
+      "Dairy"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T05:33:57.834Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T05:33:57.834Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6596437155ee7b8381ba2c16"
+    },
+    "title": "Yogurt",
+    "description": "The unknown Yogurt\n",
+    "price": 456,
+    "images": [
+      "https://images.unsplash.com/photo-1571212515416-fef01fc43637?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8WW9ndXJ0fGVufDB8fDB8fHww"
+    ],
+    "category": [
+      "Dairy"
+    ],
+    "color": [
+      "red",
+      "black",
+      "white"
+    ],
+    "size": [
+      "44",
+      "45",
+      "42",
+      "43"
+    ],
+    "isAvailable": true,
+    "rating": 0,
+    "totalRaters": 0,
+    "totalSoldUnit": 0,
+    "createdAt": {
+      "$date": "2024-01-04T05:34:41.434Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-04T05:34:41.434Z"
+    },
+    "__v": 0
+  }
+]
