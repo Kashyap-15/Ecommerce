@@ -1,0 +1,9 @@
+.modalBody{
+    background-color: #eff4f7;
+}
+.ToggleBtn{
+    padding: 0px 5px;
+    border-radius: 5px;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}

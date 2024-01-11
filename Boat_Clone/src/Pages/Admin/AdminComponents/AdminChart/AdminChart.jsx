@@ -20,8 +20,8 @@ export default function AdminChart() {
                     <YAxis />
                     <Tooltip />
                     <Legend />
-                    <Line type="monotone" dataKey="pv" stroke="#8884d8" />
-                    <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+                    <Line type="monotone" dataKey="Revenues" stroke="#8884d8" />
+                    <Line type="monotone" dataKey="users" stroke="#82ca9d" />
                 </LineChart>
             </ResponsiveContainer>
         </>

@@ -6,6 +6,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    border: 1px solid #0000001a;
 }
 /* -------------- LOGO Section ------------------ */
 .leftSidebarLogo{
@@ -15,9 +16,9 @@
     margin: 10px 0px;
 }
 .sidebarLogoImg{
-    width: 80%;
-    height: 80%;
-    object-fit: contain;
+    width: 50% !important;
+    height: 50% !important;
+    object-fit: contain !important;
 }
 /* ------------ Ui - Li Section --------------------- */
 .leftSidebarContent{
@@ -30,6 +31,9 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+.leftSidebarUl .navlinkDiv{
+    text-decoration: none;
 }
 .leftSidebarLi{
     font-size: 13px;

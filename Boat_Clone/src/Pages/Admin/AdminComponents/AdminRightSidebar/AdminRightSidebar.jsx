@@ -1,11 +1,14 @@
 import React from 'react'
 import "./AdminRightSidebar.css"
-import { ArrowDownwardOutlined, ArrowDropDownOutlined, NotificationAddOutlined, NotificationsNoneOutlined, SearchOffOutlined, SearchOutlined } from '@mui/icons-material'
+import {  ArrowDropDownOutlined, NotificationsNoneOutlined, SearchOutlined } from '@mui/icons-material'
 import PriceCard from './PriceCard'
 import AdminChart from '../AdminChart/AdminChart'
 import { StateSalesData } from '../../../../../DataForImages'
+import { useSelector } from 'react-redux'
 
 export default function AdminRightSidebar() {
+  const user = useSelector((state)=>state.authReducer.user)
+  console.log("--------user:", user)
   return (
     <div className='adminRightSidebar'>
         <div className="rightSidebarHeader">
@@ -24,7 +27,7 @@ export default function AdminRightSidebar() {
             <span className="sidebarSearchIcon"><NotificationsNoneOutlined/></span>
               <div className="sidebarUserIcon">
                 <img src="AdminImg/EmptyUser.jpeg" alt="re" />
-                <span>BoatHead</span>
+                <span>{user.email}</span>
                 <span><ArrowDropDownOutlined/></span>
               </div>
           </div>

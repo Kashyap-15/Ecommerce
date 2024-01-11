@@ -1,0 +1,34 @@
+
+::-webkit-scrollbar {
+    height: 2px;
+    width: 5px;
+}
+/* ------------------video Css ------------- */
+.videoCom{
+    width: 93%;
+    height: 350px;
+    display: flex;
+    gap: 30px;
+    overflow-x: scroll;
+    margin: 40px 50px;
+}
+.videoComTitle{
+    margin: 20px 50px;
+    font-size: 27px;
+    font-weight: 500;
+}
+.videoDiv{
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+}
+.Video{
+    border-radius: 20px;
+    height: 300px;
+    width: 300px;
+}
+.videoTitle{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}

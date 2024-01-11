@@ -1,32 +1,23 @@
 import React, { useState } from 'react'
-import { Button } from 'react-bootstrap'
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
 
-export default function OffCanvas() {
-  const [show, setShow] = useState(false);
+export default function OffCanvas({toggle,setToggle}) {
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Launch
-      </Button>
-      <div style={{zIndex:"999"}}>
-
-      <Offcanvas show={show} onHide={handleClose}>
-        <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
-        </Offcanvas.Header>
-        <Offcanvas.Body>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
-          
-          eafbkjwef
-        </Offcanvas.Body>
-      </Offcanvas>
-              </div>
+      <div style={{ zIndex: "999" }}>
+        <Offcanvas show={toggle} placement='end' onHide={()=>setToggle(false)}>
+          <Offcanvas.Header closeButton>
+            <Offcanvas.Title>bo<span style={{color:"#ff0000"}}>A</span>thea's Cart</Offcanvas.Title>
+          </Offcanvas.Header>
+          <Offcanvas.Body>
+            Some text as placeholder. In real life you can have the elements you
+            have chosen. Like, text, images, lists, etc.
+            eafbkjwef
+          </Offcanvas.Body>
+        </Offcanvas>
+      </div>
     </>
   )
 }

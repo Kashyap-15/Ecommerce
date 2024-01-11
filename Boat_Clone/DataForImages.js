@@ -1,4 +1,4 @@
-export let CarousalData = [
+export const CarousalData = [
     // 5s Slide
     {
         id: "1",
@@ -25,7 +25,7 @@ export let CarousalData = [
         img: "https://www.boat-lifestyle.com/cdn/shop/files/Crest-banner-dark-desktop_1600x.png?v=1699269025",
     },
 ]
-export let ActorData = [
+export const ActorData = [
 
     {
         name: "Shreyash",
@@ -48,29 +48,29 @@ export let ActorData = [
         img: "https://www.boat-lifestyle.com/cdn/shop/files/Audiophile_5.png?v=1696328658",
     },
 ]
-export let VideoCardData = [
+export const VideoCardData = [
     {
-        id: "1",
+        names: "Smartwatches",
         video: "https://www.boat-lifestyle.com/cdn/shop/files/quinn_RUxbhR7CvjkNtlFUDxgw9.mp4",
     },
     {
-        id: "2",
+        names: "Wireless Earbuds",
         video: "https://www.boat-lifestyle.com/cdn/shop/files/quinn_Bejc8URjU1NSXdhabLCmD.mp4",
     },
     {
-        id: "3",
+        names: "Neckbands",
         video: "https://www.boat-lifestyle.com/cdn/shop/files/quinn_OyJHanx4QSdUN3OVGTO7C.mp4",
     },
     {
-        id: "4",
+        names: "Headphones",
         video: "https://www.boat-lifestyle.com/cdn/shop/files/quinn_CpsRIdJWtpXyFN3enwbXd.mp4",
     },
     {
-        id: "5",
+        names: "Wireless Speakers",
         video: "https://www.boat-lifestyle.com/cdn/shop/files/quinn_j1TwOEeceKYOJc7d7mAim.mp4",
     },
 ]
-export let CategoriesData = [
+export const CategoriesData = [
     {
         name: "Truely Wireless Earbuds",
         img: "https://www.boat-lifestyle.com/cdn/shop/collections/dropdown-TWS_100x.png?v=1684827062",
@@ -151,73 +151,73 @@ export let CategoriesData = [
 export const Chartdata = [
     {
         name: 'Jan',
-        uv: 4000,
-        pv: 2400,
+        users: 4000,
+        Revenues: 2400,
     },
     {
         name: 'Feb',
-        uv: 3000,
-        pv: 1398,
+        users: 3000,
+        Revenues: 1398,
 
     },
     {
         name: 'Mar',
-        uv: 2000,
-        pv: 9800,
+        users: 2000,
+        Revenues: 9800,
 
     },
     {
         name: 'Apr',
-        uv: 2780,
-        pv: 3908,
+        users: 2780,
+        Revenues: 3908,
 
     },
     {
         name: 'May',
-        uv: 1890,
-        pv: 4800,
+        users: 1890,
+        Revenues: 4800,
 
     },
     {
         name: 'Jun',
-        uv: 2390,
-        pv: 3800,
+        users: 2390,
+        Revenues: 3800,
     },
     {
         name: 'Jul',
-        uv: 3490,
-        pv: 4300,
+        users: 3490,
+        Revenues: 4300,
     },
     {
         name: 'Aug',
-        uv: 3890,
-        pv: 4300,
+        users: 3890,
+        Revenues: 4300,
     },
     {
         name: 'Sept',
-        uv: 3290,
-        pv: 4900,
+        users: 3290,
+        Revenues: 4900,
     },
     {
         name: 'Oct',
-        uv: 1290,
-        pv: 5600,
+        users: 1290,
+        Revenues: 5600,
 
     },
     {
         name: 'Nov',
-        uv: 5490,
-        pv: 3300,
+        users: 5490,
+        Revenues: 3300,
 
     },
     {
         name: 'Dec',
-        uv: 5490,
-        pv: 7300,
+        users: 5490,
+        Revenues: 7300,
 
     },
 ];
-export let StateSalesData = [
+export const StateSalesData = [
     {
         state: "Gujarat",
         change: "+90%",
@@ -319,3 +319,4 @@ export let StateSalesData = [
         change: "+28%",
     },
 ]
+export const BE_URL = "http://localhost:9999";
