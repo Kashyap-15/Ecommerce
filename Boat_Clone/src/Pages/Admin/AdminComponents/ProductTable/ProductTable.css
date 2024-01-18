@@ -1,6 +1,6 @@
 .productTable{
-    flex: 6;
-    height: 100vh;
+    /* flex: 6; */
+    /* height: 100vh; */
     width: 100%;
     overflow: hidden;
 }
@@ -13,6 +13,12 @@
 .productTableTitleH1{
     font-size: 35px;
     font-weight: 500;
+}
+.productTableBtnDiv{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
 }
 .productTableTitleBtn{
     border: 1px solid black;
@@ -27,7 +33,35 @@
     background-color: white;
     color: black;
 }
+.productTableAddDiv{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+}
+.productTableTitleInput{
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.productTableTitleInput::placeholder{
+    padding-left: 10px;
+}
 /* ----------------- table css ------------------ */
 .productTableDiv{
     margin: 30px 40px;
+}
+.productTableMain{
+    margin-top: 40px;
+}
+.allproductImg{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.productTableBtn{
+    background-color: black;
+    border-radius: 10px;
+    color: white;
 }

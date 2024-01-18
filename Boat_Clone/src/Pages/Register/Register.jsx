@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom'
 import { login } from '../../01Redux/Feature/Auth/AuthSlice'
 import { toast } from 'react-toastify'
 
-export default function Register({setShow}) {
+export default function Register({setShow,setFlag}) {
   const [registerData, setRegisterData] = useState({
     address:{
       street:"", // using address varible because there is lack of varibles in API, so using address for full Name.
@@ -17,6 +17,8 @@ export default function Register({setShow}) {
   })
   let dispatch = useDispatch()
   let navigate = useNavigate()
+
+
   const submithandler= (e) => {
     e.preventDefault()
     let UserData = {
@@ -46,6 +48,7 @@ export default function Register({setShow}) {
       password:"",
       conPassword:"",
     })
+    setFlag(true)
   }
   return (
     <div className='register'>

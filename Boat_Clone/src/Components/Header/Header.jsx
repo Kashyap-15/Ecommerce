@@ -1,19 +1,24 @@
 import React, { useState } from 'react'
 import "./Header.css"
-import { KeyboardArrowDown, Person, Search, ShoppingBag,} from '@mui/icons-material'
+import { AccountBox, KeyboardArrowDown, Person, Search, ShoppingBag,} from '@mui/icons-material'
 import { CategoriesData } from '../../../DataForImages'
 import Modals from '../Modal/Modals'
 import OffCanvas from '../Offcanvas/Offcanvas'
-import { NavLink } from 'react-router-dom'
-
+import { NavLink, useNavigate } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 
 export default function Header() {
   const [show, setShow] = useState(false);
   const [toggle, setToggle] = useState(false);
 
+  const isUser = useSelector((state)=>state.authReducer?.user)
+  const navigate = useNavigate()
+
+
+
   return (
-    <div className='headerMain'>
+    <div className='headerMain' >
       <div className="header">
         <NavLink to={"/"}>
         <div className="headerLogo">
@@ -27,7 +32,9 @@ export default function Header() {
                 <li className='CategoriesSquare'> </li>
                 {
                   CategoriesData.map((ele,i)=>{
-                    return <li key={i} className='Categoriesli'><img className='CategoriesImg' src={ele.img} alt={ele.name} /><span className='categoriesContent'>{ele.name}</span></li>
+                    return <NavLink  key={i} to={"all-products"} style={{textDecoration:"none"}}>
+                    <li className='Categoriesli'><img className='CategoriesImg' src={ele.img} alt={ele.name} /><span className='categoriesContent'>{ele.name}</span></li>
+                    </NavLink> 
                   })
                 }
               </ul>
@@ -49,10 +56,15 @@ export default function Header() {
             <input type="text" placeholder='Search Any Products' className='scrollingPlaceholder' />
           </div>
           <div className='HeaderIcons'>
-            <div onClick={()=>setShow(true)}>
-            <Person fontSize='medium' />
-            </div>
-            <div onClick={()=>setToggle(true)} >     
+            
+            {
+              isUser.userType ? <div onClick={()=>navigate("/user-profile")}>
+              <AccountBox fontSize='medium' />
+              </div> : <div onClick={()=>setShow(true)}>
+              <Person fontSize='medium' />
+              </div>
+            }
+            <div onClick={()=> setToggle(!toggle)} >     
             <ShoppingBag fontSize='medium' />
             </div>
             <Modals show={show} setShow={setShow}/>

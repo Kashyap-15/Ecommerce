@@ -1,0 +1,102 @@
+.userProfile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.userProfileDiv {
+    width: 40%;
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.userProfileMainTitle {
+    margin: 30px 0px;
+    display: flex;
+    gap: 10px;
+    font-size: 30px;
+}
+
+.userProfileMainTitle span {
+    color: #ff0000;
+    cursor: pointer;
+}
+
+.userProfileDetails {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+    padding: 20px;
+}
+
+.profileImg {
+    font-size: 30px;
+    padding: 20px;
+    background-color: lightgray;
+    color: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.userProfileCred {
+    display: flex;
+    flex-direction: column;
+}
+
+.userName {
+    font-size: 25px;
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+.userProfileAddress {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+    padding: 10px;
+}
+
+.profileAddress {
+    padding: 10px 20px;
+    background-color: lightgray;
+    color: black;
+    border-radius: 10px;
+}
+
+.UserProfileManage {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.userProfileManageDiv {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.userProfileLogOut {
+    padding: 15px 30px;
+    background-color: white;
+    color: #ff0000;
+    border-radius: 20px;
+    font-size: 15px;
+    transition: 0.5s all ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.userProfileLogOut:hover {
+    background-color: black;
+    color: white;
+}

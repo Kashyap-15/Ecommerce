@@ -1,13 +1,13 @@
 import React from 'react'
 import "./Admin.css"
 import AdminLeftSidebar from './AdminComponents/AdminLeftSideBar/AdminLeftSidebar'
-import RouterCom from '../../02Router/RouterCom'
+import AdminRightSidebar from './AdminComponents/AdminRightSidebar/AdminRightSidebar'
 
 export default function Admin() {
   return (
     <div className='adminMain'>
         <AdminLeftSidebar/>
-        <RouterCom/>
+        <AdminRightSidebar/>
     </div>
   )
 }

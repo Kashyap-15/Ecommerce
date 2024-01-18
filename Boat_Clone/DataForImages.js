@@ -29,24 +29,24 @@ export const ActorData = [
 
     {
         name: "Shreyash",
+        title:"For Fitness",
         img: "https://www.boat-lifestyle.com/cdn/shop/files/shreyas-chronos-new.png?v=1696843687",
     },
     {
         name: "Hardik",
+        title:"For Parties",
         img: "https://www.boat-lifestyle.com/cdn/shop/files/Party_Animal_4.png?v=1685942349",
     },
     {
         name: "Rashmika",
+        title:"For Work",
         img: "https://www.boat-lifestyle.com/cdn/shop/files/Workaholic_2.png?v=1685083745",
     },
     {
         name: "Kiara",
+        title:"For Entertainment",
         img: "https://www.boat-lifestyle.com/cdn/shop/files/Entertainment_2.png?v=1685083746",
-    },
-    {
-        name: "Cricket",
-        img: "https://www.boat-lifestyle.com/cdn/shop/files/Audiophile_5.png?v=1696328658",
-    },
+    }
 ]
 export const VideoCardData = [
     {

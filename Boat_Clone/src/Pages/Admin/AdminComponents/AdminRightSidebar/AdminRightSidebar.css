@@ -1,18 +1,17 @@
 /* ------------------------ Scroll bar css -------------- */
-/* width */
+
+
 ::-webkit-scrollbar {
     width: 5px;
 }
-
-/* Track */
 ::-webkit-scrollbar-track {
     background: #0000;
 }
-
-/* Handle */
 ::-webkit-scrollbar-thumb {
     background: gray;
 }
+
+
 /* ------------------------- Main Css ----------------- */
 .adminRightSidebar {
     flex: 6;
@@ -80,6 +79,7 @@
 .rigthSidebarLeft {
     flex: 4;
     border-radius: 10px;
+    height: 100%;
 }
 
 .rigthSidebarTitle {
@@ -134,9 +134,9 @@
 }
 
 /* --------------------- State Sales Section ------------------- */
-.rightSidebarRight {
+.rightSidebarRight{
     flex: 1;
-    height: 85vh;
+    height: 80vh;
     overflow-y: scroll;
 }
 .rightSidebarSatesTitle{

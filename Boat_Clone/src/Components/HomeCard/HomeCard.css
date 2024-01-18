@@ -1,0 +1,101 @@
+.homeCard{
+    width: 94%;
+    height: 650px;
+    margin: 20px 50px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.homeCardMain{
+    width: 370px;
+    height: 500px;
+    background-color: #FAFAFA;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.homeCardImageDiv{
+    height: 75%;
+    width: 100%;
+}
+.homeCardImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.homeCardPlayback{
+    position: absolute;
+    bottom: 23%;
+    left: 23%;
+    background-color: #fcc50b;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    width: 200px;
+    height: 20px;
+    border-radius: 10px;
+}
+.homeCardTitle{
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #FAFAFA;
+    margin: 16px 15px;
+    padding: 4px 0px
+}
+.homeCardDetailDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px;
+    background-color: #FAFAFA;
+}
+.homeCardDetail{
+    display: flex;
+    flex-direction: column;
+}
+.homeCardPriceDiv{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.homeCardPrice{
+    font-size: 20px;
+    font-weight: 600;
+    font-family:cursive;
+}
+.homeCardStrikePrice{
+    font-size: 12px;
+    text-decoration: line-through;
+    color: #afafaf;
+}
+.homeCardDiscount{
+    font-size: 15px;
+    color: green;
+}
+.homeCardRatingDiv{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.homeCardRatingStar{
+    color: #f4c730;
+}
+.homeCardRating{
+    font-size: 14px;
+}
+.homeCardTotalRaters{
+    font-size: 14px;
+}
+.homeCardVarifired{
+    color: #12b985;
+}
+.homeCardAddCartDiv{
+    padding: 5px 15px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}

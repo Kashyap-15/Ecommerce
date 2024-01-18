@@ -12,11 +12,13 @@ export default function AdminLeftSidebar() {
     const navigate = useNavigate()
 
     const logoutHandler =()=>{
-        dispatch(logout())
-        navigate("/")
-        toast.success("Logout Successful",{
-            theme:"dark"
-        })
+        if(confirm("Are you logging out, boAthead?")){
+            dispatch(logout())
+            navigate("/")
+            toast.success("Logout Successful",{
+                theme:"dark"
+            })
+        }
     }
 
   return (

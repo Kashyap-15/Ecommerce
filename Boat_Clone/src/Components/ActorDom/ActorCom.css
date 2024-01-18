@@ -1,0 +1,40 @@
+.actorCom{
+    display: flex;
+    align-items: center;
+    width: 94%;
+    height: 600px;
+    margin: 10px 50px;
+}   
+.actorComMainTitle{
+    margin: 0px 50px;
+    font-size: 27px;
+    font-weight: 500;
+}
+.actorComImageDiv{
+    width: 300px;
+    height: 450px;
+    margin: 0px 30px;
+}
+.actorComImg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.actorComDetailsDiv{
+    background-color: #eff4f7;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.actorComTitle{
+    font-size: 25px;
+    font-weight: 600;
+}
+.actorComView{
+    font-size: 17px;
+    color: #2f5b96;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

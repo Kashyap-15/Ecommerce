@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux'
 
 export default function AdminRightSidebar() {
   const user = useSelector((state)=>state.authReducer.user)
-  console.log("--------user:", user)
+
   return (
     <div className='adminRightSidebar'>
         <div className="rightSidebarHeader">

@@ -16,7 +16,7 @@ export default function Modals({show,setShow}) {
         </Modal.Header>
         <Modal.Body className='modalBody'>
           {
-          flag ? <LoginCom setShow={setShow}/> : <Register setShow={setShow}/>
+          flag ? <LoginCom setShow={setShow}/> : <Register setShow={setShow} setFlag={setFlag}/>
           }
         </Modal.Body>
         <Modal.Footer>
