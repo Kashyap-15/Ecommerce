@@ -1,0 +1,46 @@
+.filterMain,.filterBody{
+    background-color: aliceblue;
+}
+.filterApply{
+    text-align: end;
+}
+.filterApplyBtn{
+    height: 30px;
+    width: 120px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: 0.5s all ease;
+}
+.filterApplyBtn:hover{
+    background-color: white;
+    color: black;
+}
+.filterLabel{
+    margin-top: 20px;
+}
+.filterCount{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.filterCountBox{
+    background-color: #abd3e3;
+    width: 80px;
+    text-align: center;
+    border-radius: 10px;
+}
+.filterSize{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+.filterGender{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    gap: 10px;
+}

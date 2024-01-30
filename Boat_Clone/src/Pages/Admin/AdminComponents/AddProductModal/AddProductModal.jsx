@@ -9,7 +9,7 @@ import { toast } from 'react-toastify';
 import { useSearchParams } from 'react-router-dom';
 import { fetchProduct } from '../../../../01Redux/Feature/Product/ProductSlice';
 
-export default function AddProductModal({ show,setShow,updateflag,setUpdateflag }) {
+export default function AddProductModal({ show,setShow,updateflag,setUpdateflag,pagination,setPagination }) {
   const [productData, setProductData] = useState({
     title: "",
     thumbnail: "",
@@ -21,17 +21,45 @@ export default function AddProductModal({ show,setShow,updateflag,setUpdateflag 
     rating: "",
     totalRaters: "",
   })
-  const [searchParam] = useSearchParams()
-  const paramid = searchParam.get("id");
 
-  useEffect(()=>{
-    axios({
-      method:"get",
-      url:`${BE_URL}/product/getProductById/${paramid}`
-    }).then((res)=>[
-      setProductData(res.data.data)
-    ])
-  },[location.search])
+  const paramid = new URLSearchParams(location.search).get("id");
+
+  // useEffect(()=>{
+  //   axios({
+  //     method:"get",
+  //     url:`${BE_URL}/product/getProductById/${paramid}`
+  //   }).then((res)=>[
+  //     setProductData(res.data.data)
+  //   ])
+  // },[paramid])
+
+  
+  useEffect(() => {
+    if (paramid) {
+      axios({
+        method: "get",
+        url: `${BE_URL}/product/getProductById/${paramid}`,
+      })
+        .then((res) => {
+          setProductData(res.data.data);
+        })
+        .catch((err) => {
+          toast.error(err.message);
+        });
+    } else {
+      setProductData({
+        title: "",
+        thumbnail: "",
+        price: "",
+        description: "",
+        size: [],
+        category: [],
+        color: [],
+        rating: "",
+        totalRaters: "",
+      });
+    }
+  }, [paramid]);
   
   const sizeOptions = [
     { value: 'Small', label: 'Small' },
@@ -42,18 +70,28 @@ export default function AddProductModal({ show,setShow,updateflag,setUpdateflag 
     { value: 'Airpodes', label: 'Airpodes' },
     { value: 'Speakers', label: 'Speakers' },
     { value: 'wired Earphones', label: 'wired Earphones' },
+    { value: 'Smart Watches', label: 'Smart Watches' },
   ];
-  const colorOptions = [
-    { value: 'Red', label: 'Red' },
-    { value: 'Blue', label: 'Blue' },
-    { value: 'Green', label: 'Green' },
-  ];
+    const colorOptions = [
+      { value: 'red', label: 'Red' },
+      { value: 'green', label: 'Green' },
+      { value: 'blue', label: 'blue' },
+      { value: 'gray', label: 'Gray' },
+      { value: 'lightblue', label: 'SkyBlue' },
+      { value: 'black', label: 'Black' },
+      { value: 'white', label: 'White' },
+      { value: 'yellow', label: 'Yellow' },
+      { value: 'pink', label: 'Pink' },
+      { value: 'brown', label: 'Coffee' },
+      { value: 'lightgreen', label: 'LightGreen' },
+    ];
   
   const token = useSelector((state)=>state?.authReducer?.token)
+  const data = useSelector((state)=>state?.productReducer)
+
   const dispatch = useDispatch()
   
   const submitHandler = ()=>{
-    console.log("🚀 ~ AddProductModal ~ productData:", productData)
     axios({
       method:"post",
       url:`${BE_URL}/product/create`,
@@ -64,7 +102,10 @@ export default function AddProductModal({ show,setShow,updateflag,setUpdateflag 
       }
     }).then((res)=>{
       toast.success("Product Added Successfully")
-      dispatch(fetchProduct())
+      let curPage = pagination.page
+      if(data?.products.length === 10) curPage+1
+      setPagination({...pagination, page:curPage})
+      dispatch(fetchProduct({page:pagination.page,limit:10}))
     }).catch((err)=>{
       toast.error(err.message)
     })
@@ -93,7 +134,7 @@ export default function AddProductModal({ show,setShow,updateflag,setUpdateflag 
     }).catch((err)=>{
       toast.error(err.message)
     })
-    setUpdateflag(!updateflag)
+    setUpdateflag(false)
     setProductData({
       title: "",
       thumbnail: "",
@@ -157,7 +198,7 @@ export default function AddProductModal({ show,setShow,updateflag,setUpdateflag 
                 <label className='addProductLabel' htmlFor="">Size :</label>
                 <Select isMulti className='selectContainer'
                   options={sizeOptions}
-                  closeMenuOnSelect={false}
+                  closeMenuOnSelect={true}
                   placeholder='Select The Size'
                   // value={productData.size.map((e)=>{value:e;label:e})}
                   onChange={(e)=>setProductData({...productData,size:e?.map((ele)=>ele.value)})}
@@ -177,7 +218,7 @@ export default function AddProductModal({ show,setShow,updateflag,setUpdateflag 
                 <label className='addProductLabel' htmlFor="">Color :</label>
                 <Select isMulti className='selectContainer'
                   options={colorOptions}
-                  closeMenuOnSelect={false}
+                  closeMenuOnSelect={true}
                   onChange={(e)=>setProductData({...productData,color:e?.map((ele)=>ele.value)})}
                   />
               </div>

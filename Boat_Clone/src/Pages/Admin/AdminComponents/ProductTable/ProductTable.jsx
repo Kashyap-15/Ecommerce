@@ -9,28 +9,35 @@ import { toast } from 'react-toastify';
 import { Create, DeleteForever, EditAttributes } from '@mui/icons-material';
 import axios from 'axios';
 import { BE_URL } from '../../../../../DataForImages';
+import PaginationCom from '../../../../Components/PaginationCom/PaginationCom';
 
 export default function ProductTable() {
   const [allProduct, setAllProduct] = useState([])
   const [show, setShow] = useState(false);
   const [updateflag, setUpdateflag] = useState(false)
   const [seachParam,setSearchParam]=useSearchParams()
+  const [totalCount,setTotalCount] =  useState(0)
+  const [pagination,setPagination]=useState({
+    page:1,
+    limit:10
+  })
   
   let navigate = useNavigate()
   let dispatch = useDispatch()
-
+  
   useEffect(()=>{
-    dispatch(fetchProduct())
-  },[])
+    dispatch(fetchProduct({page:pagination.page,limit:10}))
+  },[pagination])
   
   let data = useSelector((state)=>state?.productReducer)
   let token = useSelector((state)=>state?.authReducer?.token)
- 
+  
   useEffect(()=>{
     if(data?.error?.lenght>0){
       toast.error(data.error)
     }
     setAllProduct(data.products)
+    setTotalCount(Math.ceil(data?.count/10))
   }),[data]
 
   const delHandler = (id)=>{
@@ -42,7 +49,8 @@ export default function ProductTable() {
       }
     }).then((res)=>{
       toast.success("Product Deleted Successfully")
-      dispatch(fetchProduct())
+      setPagination({...pagination,page:allProduct.lenght>1 ? pagination.page : pagination.page-1})
+      dispatch(fetchProduct({page :allProduct?.length >0 ? pagination.page : pagination.page,limit:10}))
     }).catch((err)=>{
       toast.error(err.message)
     })
@@ -54,9 +62,15 @@ export default function ProductTable() {
     setUpdateflag(!updateflag)
   }
 
+  function adminAdd(){
+    setUpdateflag(false)
+    navigate("/admin-products")
+    setShow(!show)
+  }
+
   return (
     <>
-      <AddProductModal show={show} setShow={setShow} setUpdateflag={setUpdateflag} updateflag={updateflag} />
+      <AddProductModal  show={show} setShow={setShow} setUpdateflag={setUpdateflag} updateflag={updateflag} setPagination={setPagination} pagination={pagination} />
       <div className='productTable'>
         <div className='productTableTitle'>
           <h1 className='productTableTitleH1'>bo<span style={{ color: "#ff0000" }}>A</span>t Products</h1>
@@ -68,7 +82,7 @@ export default function ProductTable() {
         <div className='productTableDiv'>
           <div className="productTableAddDiv">
             <input className='productTableTitleInput' type="text" placeholder='Search' />
-            <button className='productTableTitleBtn' variant="dark" onClick={() => setShow(!show)}>
+            <button className='productTableTitleBtn' variant="dark" onClick={() => adminAdd()}>
               Add Product
             </button>
           </div>
@@ -95,8 +109,8 @@ export default function ProductTable() {
               {
                 allProduct.map((ele,i)=>{
                   return <tr key={ele._id}>
-                  <td>{i+1}</td>
-                  <td><img className='allproductImg' src={ele.images[0]} alt="Product Image"/></td>
+                  <td>{(pagination?.page-1)*10+i+1}</td>
+                  <td><img className='allproductImg' src={ele.thumbnail} alt="Product Image"/></td>
                   <td>{ele.title}</td>
                   <td>{ele.description}</td>
                   <td>{ele.price}</td>
@@ -127,6 +141,12 @@ export default function ProductTable() {
             </tbody>
           </Table>
       }
+      <PaginationCom
+        setPagination={setPagination}
+        page = {pagination.page}
+        limit = {pagination.limit}
+        pageLimit = {totalCount}
+      />
         </div>
       </div>
     </>

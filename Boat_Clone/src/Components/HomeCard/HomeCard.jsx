@@ -3,6 +3,7 @@ import "./HomeCard.css"
 import { Star, Verified } from '@mui/icons-material'
 
 export default function HomeCard() {
+
   return (
     <div className='homeCard'>
         <div className="homeCardMain">

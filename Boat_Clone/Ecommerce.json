@@ -1,0 +1,34 @@
+[
+    {
+        "_id": {
+          "$oid": "65a8d9a0922a580a4ff8b479"
+        },
+        "title": "Airppdes",
+        "description": "terdbreg",
+        "price": 3000,
+        "images": [],
+        "thumbnail": "efewfwe",
+        "category": [
+          "Airpodes"
+        ],
+        "color": [
+          "Red",
+          "Green",
+          "Blue"
+        ],
+        "size": [
+          "Medium"
+        ],
+        "isAvailable": true,
+        "rating": 4.4,
+        "totalRaters": 134543,
+        "totalSoldUnit": 0,
+        "createdAt": {
+          "$date": "2024-01-18T07:56:16.731Z"
+        },
+        "updatedAt": {
+          "$date": "2024-01-18T07:56:16.731Z"
+        },
+        "__v": 0
+      }
+]

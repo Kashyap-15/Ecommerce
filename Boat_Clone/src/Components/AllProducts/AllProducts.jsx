@@ -4,28 +4,63 @@ import { KeyboardArrowDown, Star, SwapVert, TuneOutlined, Verified } from '@mui/
 import axios from 'axios'
 import { BE_URL } from '../../../DataForImages'
 import { toast } from 'react-toastify'
-
+import FilterOffCanvas from '../FilterOffCanvas/FilterOffCanvas'
+import { useSelector } from 'react-redux'
 
 
 export default function AllProducts() {
   const [allProducts, setAllProducts] = useState([])
+  const [show, setShow] = useState(false);
+
+  const token = useSelector((state)=>state.authReducer?.token)
+  
+  const [filteredData, setFilteredData] = useState({
+    category: [],
+    color: [],
+    size: [],
+    gender: "",
+    price: {
+      lt: 0,
+      gt: 0,
+    },
+  })
   
   useEffect(()=>{
     axios({
-      url:`${BE_URL}/product/getAll`
+      method:"get",
+      url:`${BE_URL}/product/getAll`,
     }).then((res)=>[
       setAllProducts(res.data.data)
     ]).catch((err)=>{
       toast.error(err.message)
     })
-  },[])
+  },[filteredData])
+  
+  // console.log("🚀 ~ AllProducts ~ filteredData:", filteredData)
+  
+  const carthandler = (cartid)=>{
+      axios({
+        method:"post",
+        url:`${BE_URL}/cart/create/${cartid}`,
+        headers:{
+          "Content-Type":"application/json",
+          authorization:`bearer ${token}`
+        }
+      }).then((res)=>{
+        toast.success("Product Added")
+        return res.data.data
+      }).catch((err)=>{
+        toast.error(err.message)  
+      })
+  }
 
-  return (
+ return (
     <>
+    <FilterOffCanvas show={show} setShow={setShow} AllproductFilter={filteredData} AllproductsetFilter={setFilteredData} />
     <div className='allProductsHeader'>
       <h1 className='ProductTitle'>Boat Products</h1>
       <div className='ProductFilterDiv'>
-          <span className='ProductFilter'><TuneOutlined/> Filter <KeyboardArrowDown/></span>
+          <span className='ProductFilter' onClick={()=>setShow(!show)}><TuneOutlined/> Filter <KeyboardArrowDown/></span>
           <span className='ProductFilter'><SwapVert/> Sort : </span>
       </div>
     </div>
@@ -34,24 +69,27 @@ export default function AllProducts() {
         allProducts.map((ele)=>{
           return <div key={ele._id} className="allProductDiv">
           <div className="allproductsImgDiv">
-            <img className='allproductsImg' src={ele.images} alt="" />
+            <img className='allproductsImg' src={ele.thumbnail} alt="" />
           </div>
           <div className="allproductContent">
             <div className="homeCardRatingDiv">
                 <span className='homeCardRatingStar'><Star fontSize='small' /></span>
-                <span className='homeCardRating'>4.8</span>
+                <span className='homeCardRating'>{ele.rating}</span>
                 <span>|</span>
-                <span className='homeCardTotalRaters'>1336</span>
+                <span className='homeCardTotalRaters'>{ele.totalRaters}</span>
                 <span className='homeCardVarifired'><Verified  fontSize='small'/></span>
             </div>
             <h3 className='allproductTitle'>{ele.title}</h3>
               <div className="allProductsPriceDiv">
                   <span className='allProductsPrice'>₹{ele.price}</span>
-                  <span className='allProductsStrikePrice'>₹2399</span>
+                  <span className='allProductsStrikePrice'>₹7399</span>
                   <span className='allProductsDiscount'>70% off</span>
               </div>
-           <hr />
-           <div className='allProductBtn'>
+              <div className='allproductDescription'>
+                {ele.description}
+              <hr className='allproductHr' />
+              </div>
+           <div className='allProductBtn' onClick={()=>carthandler(ele._id)}>
               Add to Cart
            </div>
           </div>

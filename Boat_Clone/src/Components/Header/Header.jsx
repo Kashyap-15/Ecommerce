@@ -3,9 +3,9 @@ import "./Header.css"
 import { AccountBox, KeyboardArrowDown, Person, Search, ShoppingBag,} from '@mui/icons-material'
 import { CategoriesData } from '../../../DataForImages'
 import Modals from '../Modal/Modals'
-import OffCanvas from '../Offcanvas/Offcanvas'
 import { NavLink, useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
+import CartOffCanvas from '../CartOffcanvas/CartOffcanvas'
 
 
 export default function Header() {
@@ -14,8 +14,6 @@ export default function Header() {
 
   const isUser = useSelector((state)=>state.authReducer?.user)
   const navigate = useNavigate()
-
-
 
   return (
     <div className='headerMain' >
@@ -68,7 +66,7 @@ export default function Header() {
             <ShoppingBag fontSize='medium' />
             </div>
             <Modals show={show} setShow={setShow}/>
-            <OffCanvas toggle={toggle} setToggle={setToggle}/>
+            <CartOffCanvas toggle={toggle} setToggle={setToggle}/>
           </div>
         </div>
       </div>

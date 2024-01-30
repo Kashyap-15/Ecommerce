@@ -13,6 +13,7 @@ export default function PaginationAdmin({ setPagination, page, limit, pageLimit 
     useEffect(() => {
         setPageCount(pageLimit)
     }, [pageLimit])
+
     useEffect(() => {
         if ([pageCount - 2, pageCount - 1, pageCount].includes(page)) {
             let arr = [
@@ -26,7 +27,7 @@ export default function PaginationAdmin({ setPagination, page, limit, pageLimit 
         } else if (page > 3) {
             let arr = [page - 2, page - 1, page, page + 1, page + 2];
             setPageArr(arr)
-        } else if (page < 3) {
+        } else if (pageCount <= 3) {
             let arr = [1, 2, 3, 4, 5];
             setPageArr(arr)
         }

@@ -1,0 +1,15 @@
+.paginationCom{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.pagesDiv{
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid black;
+    background-color: aliceblue;
+    cursor: pointer;
+}

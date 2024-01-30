@@ -5,7 +5,7 @@ import { BE_URL } from "../../../../DataForImages"
 export const fetchProduct = createAsyncThunk("getProduct",(action)=>{
     return axios({
         method:"get",
-        url:`${BE_URL}/product/getAll`,
+        url:`${BE_URL}/product/getAllPaginate`,
         params:action,
     }).then((res) => {
         return res.data;
@@ -38,7 +38,7 @@ const productSlice = createSlice({
             state.pending=true;
         })
         .addCase(fetchProduct.rejected,(state,action)=>{
-            state.error=action.error.message
+            state.error=action.error.code.message;
             state.pending=true;
         })
     }
