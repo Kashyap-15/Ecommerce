@@ -258,38 +258,3 @@ export default function AddProductModal({ show,setShow,updateflag,setUpdateflag,
     </>
   )
 }
-
-
-
-
-
-// {
-// 	"status": 200,
-// 	"data": {
-// "title": "ABCD",
-// 		"description": "adfjcwebibfiuwiebvw",
-// 		"price": 345,
-// 		"images": [],
-// 		"thumbnail": "afefqf",
-// 		"category": [],
-// 		"color": [
-// 			"red",
-// 			"black",
-// 			"white"
-// 		],
-// 		"size": [
-// 			"44",
-// 			"45",
-// 			"42",
-// 			"43"
-// 		],
-// 		"isAvailable": true,
-// 		"rating": 0,
-// 		"totalRaters": 0,
-// 		"totalSoldUnit": 0,
-// 		"_id": "659fe95a72d9124089f83836",
-// 		"createdAt": "2024-01-11T13:12:58.351Z",
-// 		"updatedAt": "2024-01-11T13:12:58.351Z",
-// 		"__v": 0
-// 	}
-// }

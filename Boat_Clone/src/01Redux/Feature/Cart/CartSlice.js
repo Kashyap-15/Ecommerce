@@ -36,6 +36,7 @@ const cartSlice = createSlice({
     extraReducers:(builder)=>{
         builder
         .addCase(fetchCart.fulfilled,(state,action)=>{
+            console.log("🚀 ~ .addCase ~ state:", state.cartId)
             state.carts = action?.payload?.data;
             state.cartId = action?.payload?.cartId;
             state.pending = false;

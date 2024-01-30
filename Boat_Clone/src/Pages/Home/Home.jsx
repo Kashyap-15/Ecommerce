@@ -16,7 +16,6 @@ export default function Home() {
           <TodayDeal />
           <HomeCard/>
           <ActorCom/>
-          <h1>dsfwefhb</h1>
     </div>
   )
 }

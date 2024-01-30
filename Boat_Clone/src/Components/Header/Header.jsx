@@ -12,6 +12,9 @@ export default function Header() {
   const [show, setShow] = useState(false);
   const [toggle, setToggle] = useState(false);
 
+
+  const {carts} = useSelector((state)=>state?.cartReducer)
+  console.log("🚀 ~ Header ~ carts:", carts)
   const isUser = useSelector((state)=>state.authReducer?.user)
   const navigate = useNavigate()
 
@@ -62,8 +65,9 @@ export default function Header() {
               <Person fontSize='medium' />
               </div>
             }
-            <div onClick={()=> setToggle(!toggle)} >     
+            <div onClick={()=> setToggle(!toggle)} >   
             <ShoppingBag fontSize='medium' />
+            <span>{carts.length}</span>
             </div>
             <Modals show={show} setShow={setShow}/>
             <CartOffCanvas toggle={toggle} setToggle={setToggle}/>

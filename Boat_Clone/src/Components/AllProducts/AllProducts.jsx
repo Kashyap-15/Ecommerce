@@ -5,7 +5,8 @@ import axios from 'axios'
 import { BE_URL } from '../../../DataForImages'
 import { toast } from 'react-toastify'
 import FilterOffCanvas from '../FilterOffCanvas/FilterOffCanvas'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+import { fetchCart } from '../../01Redux/Feature/Cart/CartSlice'
 
 
 export default function AllProducts() {
@@ -13,6 +14,7 @@ export default function AllProducts() {
   const [show, setShow] = useState(false);
 
   const token = useSelector((state)=>state.authReducer?.token)
+  const dispatch = useDispatch()
   
   const [filteredData, setFilteredData] = useState({
     category: [],
@@ -47,7 +49,10 @@ export default function AllProducts() {
           authorization:`bearer ${token}`
         }
       }).then((res)=>{
-        toast.success("Product Added")
+        toast.success("Product Added",{
+          autoClose : 200
+        })
+        dispatch(fetchCart())
         return res.data.data
       }).catch((err)=>{
         toast.error(err.message)  

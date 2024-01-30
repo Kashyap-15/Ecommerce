@@ -29,10 +29,11 @@ const productSlice = createSlice({
     },
     extraReducers:(builder)=>{
         builder
-        .addCase(fetchProduct.fulfilled,(state,action)=>{
-            state.products = action?.payload?.data;
-            state.count = action?.payload?.count;
-            state.pending=false;
+        .addCase(fetchProduct.fulfilled,(state,action) => {
+
+                state.products = action?.payload?.data;
+            	state.count = action?.payload?.count;
+            	state.pending=false;
         })
         .addCase(fetchProduct.pending,(state,action)=>{
             state.pending=true;

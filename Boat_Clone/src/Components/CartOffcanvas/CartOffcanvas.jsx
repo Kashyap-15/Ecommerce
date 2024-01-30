@@ -13,10 +13,11 @@ export default function CartOffCanvas({toggle,setToggle}) {
   const dispatch = useDispatch()
   
   const {carts,cartId} = useSelector((state)=>state?.cartReducer)
+  console.log("🚀 ~ CartOffCanvas ~ carts:", carts)
   
   useEffect(()=>{
     dispatch(fetchCart())
-  },[carts])
+  },[])
   
   
   const cartupdateHandler = (updateId) => {
@@ -29,17 +30,16 @@ export default function CartOffCanvas({toggle,setToggle}) {
         authorization : `bearer ${JSON.parse(localStorage.getItem("token"))}`
        }
     }).then((res)=>{
-      console.log("---Success---");
       dispatch(fetchCart())
     }).catch((err)=>{
       console.log("---Error---");
     })
   }
-
+  
   const cartupdate = (eleId,eleCount) => {
-   axios({
-    method:"put",
-    url:`${BE_URL}/cart/update`,
+    axios({
+      method:"put",
+      url:`${BE_URL}/cart/update`,
     data:{
       _id:cartId,
       productId:eleId,
@@ -49,13 +49,13 @@ export default function CartOffCanvas({toggle,setToggle}) {
       "Content-Type":"application/json",
       authorization : `bearer ${JSON.parse(localStorage.getItem("token"))}`
      }
-   }).then((res)=>{
+    }).then((res)=>{
       dispatch(fetchCart())
-   }).catch((err)=>{
-    console.log(err.message);
-   })
+    }).catch((err)=>{
+      console.log(err.message);
+    })
   }
-
+  
   return (
     <>
       <div style={{ zIndex: "999" }}>
@@ -89,7 +89,6 @@ export default function CartOffCanvas({toggle,setToggle}) {
                     </div>
                 })
               }
-              
             </div>
           </Offcanvas.Body>
         </Offcanvas>
