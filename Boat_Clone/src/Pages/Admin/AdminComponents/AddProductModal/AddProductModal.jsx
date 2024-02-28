@@ -161,7 +161,6 @@ export default function AddProductModal({ show,setShow,updateflag,setUpdateflag,
           
           <div className="addProductDiv">
             
-
               <div className="addProductInput">
                 <label className='addProductLabel' htmlFor="">Product Title :</label>
                 <input className='addProductInputBar' type="text" placeholder='Airpodes 181'

@@ -15,7 +15,7 @@ export default function ProductTable() {
   const [allProduct, setAllProduct] = useState([])
   const [show, setShow] = useState(false);
   const [updateflag, setUpdateflag] = useState(false)
-  const [seachParam,setSearchParam]=useSearchParams()
+  const [seachParam,setSearchParam]= useSearchParams()
   const [totalCount,setTotalCount] =  useState(0)
   const [pagination,setPagination]=useState({
     page:1,
